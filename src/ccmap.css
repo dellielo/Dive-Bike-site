@@ -1,0 +1,223 @@
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 100%;
+  color: #090909;
+  font-family: sans-serif;
+}
+
+a {
+  color: rgb(0, 119, 204);
+}
+
+a:hover {
+  color: #3af;
+}
+
+a:visited {
+  color: #005999;
+}
+
+#map-container {
+  flex-grow: 1;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
+}
+
+#loading > img {
+  width: 2em;
+  height: 2em;
+}
+
+#panel {
+  flex-grow: 0;
+  width: 17em;
+  padding: 1em;
+  padding-bottom: 0em;
+  background-color: #ffffff;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+#panel div {
+  margin-bottom: 1em;
+}
+
+#panel > div {
+  flex-grow: 0;
+  margin-bottom: 1em;
+}
+
+#panel > #details {
+  flex-grow: 1;
+}
+
+#panel h5 {
+  font-size: 120%;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.checkbox-selection {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-selection:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.checkbox-selection input {
+  display: none;
+}
+
+.checkbox-selection li {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.checkbox-selection label {
+  box-sizing: content-box;
+  text-align: center;
+  height: 1.5em;
+  line-height: 1.5em;
+  display: block;
+  background-color: #ffffff;
+  border-color: #adb3b9;
+  border-radius: 0.2em;
+  font-size: 1em;
+  border: 2px solid;
+  padding: 0.3em 0.4em;
+  font-weight: bold;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.checkbox-selection li:first-child:not(:only-child) label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.checkbox-selection li:not(:first-child):not(:last-child) label {
+  border-radius: 0;
+  border-right: 0;
+}
+
+.checkbox-selection li:not(:only-child):last-child label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.checkbox-selection li:first-child:not(:only-child) label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.checkbox-selection label:hover {
+  background-color: rgba(183, 192, 200, 0.05);
+}
+
+.checkbox-selection input[type="checkbox"]:checked + label {
+  background-color: #ebeff4;
+}
+
+#panel dl {
+  margin: 0;
+}
+
+#panel dt:before {
+  content: "";
+  display: block;
+}
+
+#panel dt {
+  display: inline;
+}
+
+#panel dd {
+  display: inline;
+  margin-left: 0;
+}
+
+#challenges-detail {
+  display: none;
+}
+
+#challenge-detail {
+  display: none;
+}
+
+#panel > #strava-auth {
+  display: block;
+  padding-bottom: 1em;
+  margin-bottom: 0em;
+}
+
+#panel > #strava-unauth {
+  display: none;
+  padding-bottom: 1em;
+  margin-bottom: 0em;
+}
+
+.strava-button {
+  display: block;
+  margin: auto;
+  box-sizing: content-box;
+  height: 1.5em;
+  color: #fff;
+  background-color: #fc4c02;
+  border-color: #fc4c02;
+  border-radius: 0.2em;
+  font-size: 1em;
+  border-style: solid;
+  padding: 0.3em 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.strava-button:hover {
+  background-color: #bd3902;
+  border-color: #bd3902;
+}
+
+.strava-coverage {
+  display: none;
+}
+
+@media (max-width: 608px) {
+  body {
+    flex-direction: column;
+  }
+
+  #map-container {
+    height: 13em;
+  }
+
+  #panel {
+    width: auto;
+    max-height: 13em;
+  }
+}

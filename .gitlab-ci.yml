@@ -1,0 +1,25 @@
+image: node:latest
+
+build:
+  stage: build
+  cache:
+    paths:
+      - .npm/
+  artifacts:
+    paths:
+      - dist
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - npm run build
+
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

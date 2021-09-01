@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Classics Challenge Maps</title>
+    <link rel="stylesheet" href="ccmap.css" />
+  </head>
+
+  <body>
+    <div id="map-container">
+      <div id="map"></div>
+      <div id="loading">
+        <img src="icons/loading.svg" />
+      </div>
+    </div>
+    <div id="panel">
+      <div id="filter">
+        <h5>Filtres</h5>
+        <ul id="year-filter" class="checkbox-selection">
+          <li>
+            <input id="year17" type="checkbox" />
+            <label for="year17">2017</label>
+          </li>
+          <li>
+            <input id="year18" type="checkbox" />
+            <label for="year18">2018</label>
+          </li>
+          <li>
+            <input id="year19" type="checkbox" />
+            <label for="year19">2019</label>
+          </li>
+          <li>
+            <input id="year20" type="checkbox" checked="checked" />
+            <label for="year20">2020</label>
+          </li>
+        </ul>
+        <ul class="checkbox-selection strava-coverage">
+          <li>
+            <input id="user-traces" type="checkbox" />
+            <label for="user-traces">Afficher mes traces</label>
+          </li>
+        </ul>
+      </div>
+      <div id="details">
+        <div id="challenges-detail">
+          <h5>Stats globales</h5>
+          <dl>
+            <dt>Distance totale&nbsp;:</dt>
+            <dd><span id="challenges-distance"></span>km</dd>
+
+            <dt class="strava-coverage">Parcouru&nbsp;:</dt>
+            <dd class="strava-coverage">
+              <span id="challenges-covered"></span>%
+            </dd>
+          </dl>
+        </div>
+        <div id="challenge-detail">
+          <h5 id="challenge-title"></h5>
+          <dl>
+            <dt>Distance&nbsp;:</dt>
+            <dd><span id="challenge-distance"></span>km</dd>
+
+            <dt>Dénivelé&nbsp;:</dt>
+            <dd><span id="challenge-elevation"></span>m</dd>
+
+            <dt><a id="challenge-blogpost" href="">Blog post</a></dt>
+            <dt><a id="challenge-strava-link" href="">Strava</a></dt>
+            <dt><a id="challenge-gpx" href="">GPX</a></dt>
+
+            <dt class="strava-coverage">Parcouru&nbsp;:</dt>
+            <dd class="strava-coverage">
+              <span id="challenge-covered"></span>%
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div id="strava-auth">
+        <p>
+          Pour visualiser les portions que vous avez déjà parcourues, connectez
+          ccmap à votre compte Strava.
+        </p>
+        <button class="strava-button">Se connecter à Strava</button>
+      </div>
+      <div id="strava-unauth">
+        <button class="strava-button">Se déconnecter de Strava</button>
+      </div>
+    </div>
+
+    <script src="ccmap.ts"></script>
+  </body>
+</html>
