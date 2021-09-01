@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start": "mv dist public",
+    "start": "parcel dist/index.html",
     "dev": "parcel src/index.html",
     "prettier": "prettier --check .",
     "build": "tsc --noEmit && eslint . && parcel build src/index.html",
