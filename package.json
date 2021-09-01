@@ -10,9 +10,10 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start": "parcel dist/index.html",
+    "start": "parcel serve src/index.html",
     "dev": "parcel src/index.html",
     "prettier": "prettier --check .",
+    "parcel": "parcel build src/index.html",
     "build": "tsc --noEmit && eslint . && parcel build src/index.html",
     "update-cc-list": "npx ts-node scripts/update-cc-list.ts"
   },
