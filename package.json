@@ -1,5 +1,5 @@
 {
-  "name": "ccmap",
+  "name": "diveandbike",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "start": "mv dist public",
     "dev": "parcel src/index.html",
     "prettier": "prettier --check .",
     "build": "tsc --noEmit && eslint . && parcel build src/index.html",
