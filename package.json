@@ -55,6 +55,6 @@
     "kd-tree-javascript": "^1.0.3",
     "leaflet": "^1.7.1",
     "polyline-encoded": "0.0.9",
-    "parcel-bundler": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
   }
 }
