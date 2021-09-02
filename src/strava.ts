@@ -1,9 +1,10 @@
 const BASE_URL = "https://www.strava.com/api/v3";
 const CALLBACK_URL = window.location.origin;
 const CLIENT_ID = "69583";
+const CLIENT_SECRET = "47e8223b3cc1c463b95abf24e8ade13eda7ec45c";
 const SCOPE = "activity:read";
 const AUTH_URL = `http://www.strava.com/oauth/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${CALLBACK_URL}&approval_prompt=auto&scope=${SCOPE}`;
-const TOKEN_URL = "https://stravaauth.azurewebsites.net/api/stravaauth";
+const TOKEN_URL = "https://www.strava.com/oauth/token"; ; //"https://stravaauth.azurewebsites.net/api/stravaauth";
 
 function hasStravaAccess(): boolean {
   const scope = localStorage.getItem("strava_scope");
@@ -61,7 +62,7 @@ function auth(): void {
   const scope = urlParams.get("scope");
   if (code && scope) {
     const request = new Request(
-      `${TOKEN_URL}?code=${code}&grant_type=authorization_code`,
+      `${TOKEN_URL}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&code=${code}&grant_type=authorization_code`,
       { method: "POST" }
     );
     fetch(request)
@@ -83,7 +84,7 @@ let pRefreshToken: Promise<string> | null;
 function refreshToken(token: string): Promise<string> {
   if (!pRefreshToken) {
     const request = new Request(
-      `${TOKEN_URL}?refresh_token=${token}&grant_type=refresh_token`,
+      `${TOKEN_URL}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&refresh_token=${token}&grant_type=refresh_token`,
       { method: "POST" }
     );
     pRefreshToken = fetch(request)
