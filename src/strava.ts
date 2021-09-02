@@ -1,6 +1,6 @@
 const BASE_URL = "https://www.strava.com/api/v3";
 const CALLBACK_URL = window.location.origin;
-const CLIENT_ID = "39609";
+const CLIENT_ID = "69583";
 const SCOPE = "activity:read";
 const AUTH_URL = `http://www.strava.com/oauth/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${CALLBACK_URL}&approval_prompt=auto&scope=${SCOPE}`;
 const TOKEN_URL = "https://stravaauth.azurewebsites.net/api/stravaauth";
