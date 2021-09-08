@@ -34,6 +34,12 @@ function showChallengesDetails(challenges: Challenge[]): void {
     .forEach((node) => ((node as HTMLElement).style.display = coverageDisplay));
 }
 
+function showGPXDetails(gpx: L.GPX): void{
+  document.getElementById("gpx-distance")!.textContent = String(
+    Math.round(gpx.get_distance()/ 1000)
+  );
+}
+
 function showChallengeDetails(challenge: Challenge | null): void {
   if (!challenge) {
     document.getElementById("challenge-detail")!.style.display = "none";
@@ -137,5 +143,6 @@ export default {
   matchFilter,
   showChallengesDetails,
   showChallengeDetails,
+  showGPXDetails,
   userTracesEnabled,
 };

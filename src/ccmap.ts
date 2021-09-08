@@ -2,10 +2,12 @@ import strava from "./strava";
 import panel from "./panel";
 import "leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet-gpx";
 import "polyline-encoded";
 import { FeatureGroup, LeafletKeyboardEvent } from "leaflet";
 
 const map = L.map("map");
+
 
 const DEFAULT_PATH_OPTIONS = {
   renderer: L.canvas({
@@ -38,12 +40,13 @@ const UNCOVERED_SEGMENT_STYLE = {
   ...UNFOCUSED_SEGMENT_STYLE,
 };
 
-const DEFAULT_BOUNDS = L.latLngBounds([
-  [49.898, 3.96],
-  [46.982, -0.705],
-]);
+// const DEFAULT_BOUNDS = L.latLngBounds([
+//   [49.898, 3.96],
+//   [46.982, -0.705],
+// ]);
 
-map.fitBounds(DEFAULT_BOUNDS);
+// map.fitBounds(DEFAULT_BOUNDS);
+
 
 // const TILES_PATTERN = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 // const ATTRIBUTION = "© <a href='https://www.openstreetmap.org'>OpenStreetMap</a> contributors";
@@ -61,6 +64,28 @@ const finishIcon = L.icon({
   iconUrl: "icons/finish.svg",
   iconSize: [15, 15],
 });
+
+var gpx_url = 'gpx/projet.gpx'; // URL to your GPX file or the GPX itself
+var gpx  = new L.GPX(gpx_url, {
+  async: true,
+  marker_options: {
+    startIconUrl: 'icons/pin-icon-start.png',
+    endIconUrl: 'icons/pin-icon-end.png',
+    shadowUrl: 'icons/pin-shadow.png',
+    iconSize: [22, 30],
+    shadowSize: [25, 25],
+    iconAnchor: [11, 30],
+    shadowAnchor: [11, 31],
+  },
+  polyline_options: {
+    color: 'grey',
+    opacity: 0.5,
+    weight: 3,
+    lineCap: 'round'
+  }
+}).on('loaded', function(e) {
+  map.fitBounds(e.target.getBounds());
+}).addTo(map);
 
 interface State {
   challenges: Challenge[];
@@ -148,6 +173,7 @@ function render(): void {
   displayedChallenges.forEach(renderChallenge);
   panel.showChallengesDetails(displayedChallenges);
   panel.showChallengeDetails(state.focusedChallenge);
+  panel.showGPXDetails(gpx);
   if (state.userTracesLayer) {
     state.userTracesLayer.remove();
     if (panel.userTracesEnabled()) {
@@ -165,6 +191,7 @@ function renderChallenge(challenge: Challenge): void {
         : UNFOCUSED_SEGMENT_STYLE;
     layer.setStyle(style);
     layer.addTo(map);
+    
   }
 }
 
