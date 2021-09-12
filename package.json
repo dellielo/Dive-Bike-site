@@ -14,7 +14,7 @@
     "dev": "parcel src/index.html",
     "prettier": "prettier --check .",
     "parcel": "parcel build src/index.html",
-    "build": "tsc --noEmit && eslint . && parcel build src/index.html",
+    "build": "parcel build src/index.html", 
     "update-cc-list": "npx ts-node scripts/update-cc-list.ts"
   },
   "bugs": {
