@@ -15,6 +15,7 @@ import "leaflet-gpx";
 import "polyline-encoded";
 import { FeatureGroup, LeafletKeyboardEvent } from "leaflet";
 import * as L from 'leaflet';
+import * as Lgpx from 'leaflet-gpx';
 
 const map = L.map("map").setView([45.505, -0.09], 13);
 
@@ -77,7 +78,7 @@ tileLayer.addTo(map);
 // });
 
 var gpx_url = 'gpx/projet.gpx'; // URL to your GPX file or the GPX itself
-var gpx  = new L.GPX(gpx_url, {
+var gpx  = new Lgpx.GPX(gpx_url, {
   async: true,
   marker_options: {
     startIconUrl: 'icons/pin-icon-start.png',
