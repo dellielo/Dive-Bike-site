@@ -14,7 +14,7 @@ import "leaflet";
 import "leaflet-gpx";
 import "polyline-encoded";
 import { FeatureGroup, LeafletKeyboardEvent } from "leaflet";
-
+import * as L from 'leaflet';
 
 const map = L.map("map").setView([45.505, -0.09], 13);
 

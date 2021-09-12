@@ -31,6 +31,10 @@
         "staticOutDir": "gpx"
       },
       {
+        "staticPath": "src/images",
+        "staticOutDir": "images"
+      },
+      {
         "staticPath": "src/icons",
         "staticOutDir": "icons"
       }
