@@ -17,7 +17,7 @@ import { FeatureGroup, LeafletKeyboardEvent } from "leaflet";
 // import * as L from 'leaflet';
 // import * as Lgpx from 'leaflet-gpx';
 
-const map = L.map("map").setView([45.505, -0.09], 13);
+const map = L.map("map") //.setView([45.505, -0.09], 13);
 
 
 
