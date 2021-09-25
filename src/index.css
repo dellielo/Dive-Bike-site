@@ -75,7 +75,7 @@
 .u-section-2 .u-gallery-1 {
   height: 375px;
   width: 510px;
-  margin: 54px auto 0 45px;
+  margin: 54px auto 0;
 }
 
 .u-section-2 .u-carousel-item-1 {
@@ -159,7 +159,6 @@
 
   .u-section-2 .u-gallery-1 {
     width: 423px;
-    margin-left: 0;
   }
 }
 
