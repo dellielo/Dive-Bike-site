@@ -85,7 +85,8 @@
 
 .u-section-1 .u-image-1 {
   min-height: 578px;
-  background-image: url("images/me.jpg");
+  background-image: url("images/20210407_184813__.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -93,41 +94,32 @@
 }
 
 .u-section-1 .u-layout-cell-2 {
-  min-height: 578px;
+  min-height: 627px;
 }
 
 .u-section-1 .u-container-layout-2 {
-  padding: 19px 30px;
+  padding: 19px 18px;
 }
 
 .u-section-1 .u-text-1 {
-  margin: 0 auto 0 0;
+  margin: 0 auto 0 12px;
 }
 
 .u-section-1 .u-text-2 {
   background-image: none;
-  margin: 12px 0 0;
+  margin: 12px 12px 0;
 }
 
 .u-section-1 .u-social-icons-1 {
-  height: 24px;
+  height: 32px;
   min-height: 16px;
-  width: 127px;
+  width: 158px;
   min-width: 94px;
-  white-space: nowrap;
-  margin: -50px 0 26px auto;
-}
-
-.u-section-1 .u-icon-1 {
-  height: 24px;
-}
-
-.u-section-1 .u-icon-3 {
-  height: 100%;
+  margin: 20px 0 0;
 }
 
 .u-section-1 .u-icon-4 {
-  height: 0;
+  height: 100%;
 }
 
 @media (max-width: 1199px) {
@@ -140,7 +132,11 @@
   }
 
   .u-section-1 .u-layout-cell-2 {
-    min-height: 477px;
+    min-height: 517px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
   }
 }
 
@@ -255,7 +251,7 @@
 .u-section-3 .u-image-1 {
   min-height: 608px;
   pointer-events: auto;
-  background-image: url("images/colibri.jpg");
+  background-image: url("images/20210213_130821_.jpg");
   background-position: 50% 50%;
 }
 
@@ -284,23 +280,11 @@
 }
 
 .u-section-3 .u-text-1 {
-  margin: 0 auto 0 0;
+  margin: 10px auto 0 0;
 }
 
 .u-section-3 .u-text-2 {
   margin: 20px 0 0;
-}
-
-.u-section-3 .u-btn-1 {
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 2px;
-  background-image: none;
-  border-style: none none solid;
-  width: 107px;
-  height: 24px;
-  margin: 20px auto 0 0;
-  padding: 0;
 }
 
 @media (max-width: 1199px) {
