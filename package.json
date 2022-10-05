@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve dist/index.html",
+    "start": "serve dist/index.html",
     "dev": "parcel src/index.html",
     "prettier": "prettier --check .",
     "parcel": "parcel build src/index.html",
