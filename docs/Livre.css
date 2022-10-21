@@ -103,24 +103,63 @@
 }
 
 @media (max-width: 767px) {
+   .u-section-1 {
+    min-height: auto;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 883px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    margin-top: 1px;
+    margin-bottom: 36px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 317px;
+  }
+
   .u-section-1 .u-container-layout-1 {
     padding-left: 50px;
     padding-right: 50px;
   }
 
   .u-section-1 .u-layout-cell-2 {
-    min-height: 621px;
+    min-height: 506px;
   }
 
   .u-section-1 .u-container-layout-2 {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .u-section-1 .u-image-1 {
+    margin-right: 100px;
+  }
 }
 
 @media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 66px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 653px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
   .u-section-1 .u-layout-cell-2 {
-    min-height: 391px;
+    min-height: 319px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-right: 20px;
   }
 } .u-section-2 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/DSCN5987_rec.jpg");
