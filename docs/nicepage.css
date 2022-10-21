@@ -38103,13 +38103,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 137px;
+  min-height: 111px;
 }
 
 .u-header .u-image-1 {
   width: 88px;
   height: 89px;
-  margin: 24px auto 0 0;
+  margin: 11px auto 0 0;
 }
 
 .u-header .u-logo-image-1 {
@@ -38118,7 +38118,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: -62px 176px 0 auto;
+  margin: -62px 182px 0 auto;
 }
 
 .u-header .u-file-icon-1 {
@@ -38161,7 +38161,7 @@ a.u-link.u-text-hover-grey-90:hover {
   width: 126px;
   min-width: 94px;
   white-space: nowrap;
-  margin: -31px 0 57px auto;
+  margin: -30px 0 44px auto;
 }
 
 .u-header .u-icon-3 {
@@ -38173,6 +38173,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
+    margin-top: 11px;
     margin-left: 43px;
   }
 
@@ -38185,63 +38186,58 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-social-icons-1 {
     width: 126px;
-    margin-bottom: 58px;
+    margin-bottom: 43px;
     margin-left: 814px;
   }
 }
 @media (max-width: 991px) {
+  .u-header .u-sheet-1 {
+    min-height: 110px;
+  }
+
   .u-header .u-image-1 {
     height: 88px;
-    margin-top: 10px;
-    margin-right: 302px;
-    margin-left: auto;
+    margin-left: 19px;
   }
 
   .u-header .u-menu-1 {
-    margin-top: 6px;
-    margin-right: 321px;
+    margin-top: -62px;
+    margin-right: 152px;
     margin-left: auto;
   }
 
   .u-header .u-social-icons-1 {
-    margin-top: -22px;
-    margin-bottom: 9px;
+    margin-bottom: 43px;
     margin-left: auto;
   }
 }
 @media (max-width: 767px) {
   .u-header .u-image-1 {
     width: 87px;
-    margin-top: 10px;
-    margin-right: 226px;
   }
 
   .u-header .u-menu-1 {
-    margin-top: 10px;
+    margin-top: -31px;
     margin-right: auto;
   }
 
   .u-header .u-social-icons-1 {
-    margin-top: -26px;
-    margin-right: 10px;
+    margin-top: -22px;
+    margin-bottom: 18px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-image-1 {
     width: 87px;
-    margin-top: 8px;
-    margin-right: auto;
+    margin-left: 0;
   }
 
   .u-header .u-menu-1 {
-    margin-top: 11px;
-    width: auto;
+    margin-top: -29px;
   }
 
   .u-header .u-social-icons-1 {
     margin-top: -24px;
-    margin-right: 0;
-    margin-bottom: 8px;
   }
 }
 .u-footer .u-sheet-1 {
