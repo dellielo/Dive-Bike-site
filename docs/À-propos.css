@@ -54,7 +54,9 @@
   }
 
   .u-section-1 .u-text-2 {
+    margin-top: 20px;
     margin-right: 129px;
+    margin-bottom: initial;
   }
 }
 
@@ -69,6 +71,7 @@
 
   .u-section-1 .u-text-2 {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
