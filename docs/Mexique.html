@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr-FR"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="cycloutourisme apnée vélo plongée bike snorkeling diving freediving aventure voyage mexique trip">
+    <meta name="description" content="Site regroupant mes voyages à vélo et en plongée">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+  
+    <title>Le Mexique</title>
+    <link rel="icon" href="images/logo_v1.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel=”stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Mexique.css" media="screen">
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.6.0/gpx.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    <!-- <script> 
+      fetch("./header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+
+      // $(function(){
+      //   $("#header_code").load("header.html"); 
+      //   $("#footer").load("footer.html"); 
+      // });
+    </script>  -->
+    <!-- <meta name="generator" content="Nicepage 4.19.3, nicepage.com"> -->
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Dive and Bike",
+		"logo": "images/logo_v1.png",
+		"sameAs": ["https://www.instagram.com/dive.and.bike/"]
+}</script>
+    <meta name="theme-color" content="#017c81">
+    <meta property="og:title" content="Dive &amp; Bike">
+    <meta property="og:description" content="Site regroupant mes voyages à vélo et en plongée">
+    <meta property="og:image" content="images/logo_v1.png">
+    <meta property="og:url" content="diveandbike.fr">
+
+  </head>
+  <body class="u-body u-xl-mode" data-lang="fr">
+    <!-- <header></header> -->
+    <header class="u-align-center u-clearfix u-grey-5 u-header u-header" id="sec-f9ca"><div class="u-clearfix u-sheet u-sheet-1">
+      <a href="index.html" class="u-image u-logo u-image-1" data-image-width="459" data-image-height="466">
+        <img src="images/logo_v1.png?rand=4c29" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-align-left u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-file-icon u-nav-link u-file-icon-1" href="#">
+            <img src="icons/menu.svg" alt="">
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="index.html" style="padding: 6px 0px;">Accueil</a>
+  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="Livre.html" style="padding: 6px 0px;">Livre</a>
+  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="Mexique.html" style="padding: 6px 0px;">Voyage</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-hover-palette-2-base u-nav-link u-palette-1-base" href="Mexique.html">Mexique</a>
+  </li></ul>
+  </div>
+  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="À-propos.html" style="padding: 6px 0px;">À propos</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3"><li class="u-nav-item"><a class="u-button-style u-hover-palette-2-base u-nav-link u-palette-1-base" href="À-propos.html#sec-544d">Qui suis-je?</a>
+  </li><li class="u-nav-item"><a class="u-button-style u-hover-palette-2-base u-nav-link u-palette-1-base" href="À-propos.html#sec-e843">Mes vélos</a>
+  </li></ul>
+  </div>
+  </li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-align-center u-container-style u-inner-container-layout u-opacity u-opacity-95 u-palette-1-base u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close u-menu-close-1"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-text-active-custom-color-2 u-text-hover-custom-color-2 u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Accueil</a>
+  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Livre.html">Livre</a>
+  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Mexique.html">Voyage</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Mexique.html">Mexique</a>
+  </li></ul>
+  </div>
+  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="À-propos.html">À propos</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="À-propos.html#sec-544d">Qui suis-je?</a>
+  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="À-propos.html#sec-e843">Mes vélos</a>
+  </li></ul>
+  </div>
+  </li></ul>
+            </div>
+          </div>
+          <div class="u-menu-overlay u-opacity u-opacity-70 u-white"></div>
+        </div>
+      </nav>
+      <div class="u-align-right u-social-icons u-spacing-10 u-social-icons-1">
+        <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/dive.and.bike/"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-palette-2-base u-icon-1"><img src="icons/instagram_bleu.svg" alt=""></span>
+        </a>
+        <a class="u-social-url" title="strava" target="_blank" href="https://www.strava.com/athletes/51925230"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-palette-2-base u-icon-1"><img src="icons/strava_bleu_contours.svg" alt=""></span>
+        </a>
+        <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/elodie.dellier/"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-palette-2-base u-icon-1"><img src="icons/logo-facebook_bleu.svg" alt=""></span>
+        </a>
+        <a class="u-social-url" title="wordpress" target="_blank" href="https://madebydellielo.com/"><span class="u-file-icon u-icon u-social-icon u-social-instagram u-text-palette-2-base u-icon-1"><img src="icons/logo-wordpress_bleu.svg" alt=""></span>
+        </a>
+        
+      </div>
+      </div><style class="u-sticky-style" data-style-id="3442">.u-sticky-fixed.u-sticky-3442:before, .u-body.u-sticky-fixed .u-sticky-3442:before {
+      borders: top right bottom left !important
+  }</style></header>
+
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-5093" data-image-width="4608" data-image-height="3456">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-left u-text u-text-1">Le Mexique</h1>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-b542">
+      <div class="u-clearfix u-sheet u-valign-top-xs u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-align-left u-text u-text-default u-text-1">Le voyage</h2>
+                  <p class="u-align-left u-text u-text-2">Le Mexique, pays qui m'était inconnu fut mon terrain de jeu d'octobre 2021 à avril 2022 pour un voyage à vélo avec des palmes dans les sacoches.<br>
+                    <br>Quatre mers explorées, des centaines de plages, des dizaines de spots de plongée et d'apnée, 4 200 kilomètres parcouru, 30 000 mètres de dénivelé.&nbsp;<br>
+                    <br>Avec option otaries et requin-baleine en mer de Cortez, raies mobulas et baleines dans le Pacifique, requins et cenotes dans le Yucatán.<br>
+                    <br> Dans la présentation ci-dessous, découvrez mon voyage au Mexique de l'ouest à l'est, de Tijuana à Playa del Carmen, du Pacifique à la mer des Caraïbes, de villes en altitude aux profondeurs de la mer, de la frontière américaine à la frontière du Bélize, du désert à la jungle, des plages de Basse-Californie aux cenotes du Yucatán.
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left-xs u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-absolute-hcenter u-expanded-height u-grey-light-2 u-map u-map-1">
+                    <div class="embed-responsive">
+                      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPfAUh9K0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">  </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-3" id="sec-f451">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-1" src="">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-expanded u-grey-light-2 u-map">
+                    <div class="embed-responsive">
+                      <iframe class="embed-responsive-item" src="https://www.diveandbike.fr/map_mexico.html"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-grey-5 u-layout-cell u-right-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-align-left u-text u-text-1">Carte</h2>
+                  <p class="u-align-justify u-text u-text-2">Carte dynamique de toutes les traces GPS et tous les spots de plongée, d'apnée et de snorkeling réalisées lors de ce voyage.&nbsp;<br>
+                    <br>(Cliquez sur les points pour avoir les liens sur le blog ou sur les traces)
+                  </p>
+                  <a href="https://www.diveandbike.fr/map_mexico.html" class="u-border-1 u-border-black u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-1" target="_blank">Voir en plein écran</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-4" src="" data-image-width="4608" data-image-height="2593" id="sec-52a6">
+      <div class="u-align-center u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Livre</h2>
+        <p class="u-text u-text-2">Suite à cette aventure, j'ai écrit un livre sur ces 5 mois de voyage au Mexique.</p>
+        <a href="Livre.html" class="u-btn u-button-style u-custom-font u-font-montserrat u-text-palette-1-base u-white u-btn-1">À découvrir ici</a>
+      </div>
+    </section>
+    <section class="u-clearfix u-white u-section-5" id="sec-825a">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-1"> Pourquoi le Mexique?</h2>
+        <p class="u-align-justify u-text u-text-2"> L'idée initiale était d'aller en Thaïlande passer des niveaux de plongée puis de parcourir l'Asie du Sud en vélo du Vietnam jusqu'à Bali. Projet non Covid compatible, beaucoup de frontières étaient encore fermées en juillet 2021.&nbsp;<br>
+          <br>L'idée de plonger dans le Yucatan refait surface, je me renseigne, créé une ébauche d'itinéraire qui parcourt le pays et je me rends compte que cela correspond en tout point à la distance que je voulais faire et avec des centres de plongées dans chaque région. Aucune contrainte au Mexique liée au Covid et pas de visa nécessaire pour moins de 180 jours.<br>
+          <br>Quelques recherches pour voir si les conditions météos étaient favorables entre octobre et avril ... conditions idéales (spoiler: il fait tout de même chaud l'hiver!) Go pour le Mexique!<br>
+          <br>Bonus: rester dans un seul pays permet de ne plus avoir se soucier des rêgles liées au Covid entre pays.
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-grey-5 u-section-6" id="sec-37c0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h2>Mes sources d'inspiration</h2>
+          <p style="text-align: justify;">Tous ces blogs et sites m'ont permis de construire mon aventure notamment sur les voyages en vélo au Mexique. Ils m'ont inspiré et derrière ces lignes, des personnes adorables et disponibles qui ont répondu à toutes mes questions:</p>
+          <h4>Cyclotourisme</h4>
+          <ul>
+            <li style="text-align: left;">
+              <span style="line-height: 2.0;">Lutopi : &nbsp;<a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://lutopi.fr/" rel="noopener noreferrer" target="_blank">https://lutopi.fr/</a> L'Amérique en tandem couché
+              </span>
+            </li>
+            <li style="text-align: left;">
+              <span style="line-height: 2.0;">Julien Defourny: <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="https://www.explore-togethearth.com/" rel="noopener noreferrer" target="_blank">https://www.explore-togethearth.com/</a>
+              </span>
+            </li>
+            <li style="text-align: left;">
+              <span style="line-height: 2.0;">Tiphaine et Martin :&nbsp;</span>
+              <a href="https://www.dreamsontracks.com/" target="_blank" rel="noopener noreferrer"></a>
+              <span style="line-height: 2.0;">
+                <a href="https://www.dreamsontracks.com/" rel="noopener noreferrer" target="_blank">https://www.dreamsontracks.com/</a>
+              </span>
+            </li>
+            <li style="text-align: left;">
+              <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" href="https://www.instagram.com/laroutedelajoie/?hl=fr" rel="noopener noreferrer" target="_blank">https://www.instagram.com/laroutedelajoie/?hl=fr</a>
+            </li>
+            <li style="text-align: left;">
+              <span style="line-height: 2.0;">
+                <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="https://blog.globalbiker.org/le-mexique-a-velo-entre-freres/"></a>
+              </span>
+              <a href="https://nicepage.com" target="_blank" rel="noopener noreferrer"></a>
+              <span style="line-height: 2.0;">
+                <a href="https://nicepage.com" rel="noopener noreferrer" target="_blank"></a>
+              </span>
+              <a href="https://blog.globalbiker.org/le-mexique-a-velo-entre-freres/" target="_blank" rel="noopener noreferrer"></a>
+              <span style="line-height: 2.0;">
+                <a href="https://blog.globalbiker.org/le-mexique-a-velo-entre-freres/" rel="noopener noreferrer" target="_blank">https://blog.globalbiker.org/le-mexique-a-velo-entre-freres/</a>
+              </span>
+            </li>
+            <li style="text-align: left;">
+              <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5" href="https://nicepage.com" rel="noopener noreferrer" target="_blank">https://wikicyclopays.cyclo-camping.international/index.php?title=Mexique</a>
+            </li>
+            <li style="text-align: left;">
+              <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6" href="https://un-monde-a-velo.com/" rel="noopener noreferrer" target="_blank">https://un-monde-a-velo.com/</a>
+            </li>
+          </ul>
+          <h4>Apnée / Plongée</h4>
+          <ul>
+            <li id="isPasted">
+              <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7" href="https://oceantigers.com/" rel="noopener noreferrer" target="_blank">https://oceantigers.com/</a>
+            </li>
+            <li id="isPasted">
+              <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8" href="https://www.pranamayamexico.com/fr/" rel="noopener noreferrer" target="_blank">https://www.pranamayamexico.com/fr/<br>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <div id="footer"></div>
+  
+  </body>
+  
+  <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+
+</html>
