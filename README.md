@@ -1,3 +1,3 @@
 # Dive-Bike-site
 
-My site created with Nicepage 
+Les sources du site diveandbike.fr de façon désorganisée
