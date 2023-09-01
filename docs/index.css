@@ -423,18 +423,16 @@
 
 .u-section-3 .u-gallery-nav-1 {
   position: absolute;
-  left: 10px;
-  width: 147px;
-  height: 147px;
-  padding: 45px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .u-section-3 .u-gallery-nav-2 {
   position: absolute;
   right: 10px;
-  width: 147px;
-  height: 147px;
-  padding: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 1199px) {
