@@ -770,16 +770,17 @@
 
 @media (max-width: 575px) {
   .u-section-6 .u-sheet-1 {
-    min-height: 2987px;
+    min-height: 2328px;
   }
 
   .u-section-6 .u-tabs-1 {
-    min-height: 2354px;
+    min-height: 2190px;
   }
 
   .u-section-6 .u-container-layout-2 {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 6px;
   }
 
   .u-section-6 .u-container-layout-3 {
